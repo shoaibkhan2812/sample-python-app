@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: pods
+metadata:
+  name: flask-api
+spec:
+  containers:
+  - name: flask-api
+    image: flask_api2:latest
+  - port: 8081
+    resource:
+      limits:
+        memory: "200Mi"
